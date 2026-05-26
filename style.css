@@ -1,85 +1,76 @@
-/* Estilos generales para todo el cuerpo de la página */
+/* Estilos generales para todo el cuerpo de la página (body) */
 body {
-    /* Define una tipografía limpia y moderna (sin serifas) */
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    /* Aplica un color de fondo gris casi blanco, muy suave a la vista */
-    background-color: #f8f9fa;
-    /* Define el color del texto general en un gris oscuro, más suave que el negro puro */
+    /* Aplicamos un color de fondo gris apenas más oscuro que el blanco puro (#f5f5f5) */
+    background-color: #f5f5f5;
+    /* Color gris oscuro para el texto general para que no canse la vista */
     color: #333333;
-    /* Controla el espacio entre líneas para que el texto sea cómodo de leer */
-    line-height: 1.6;
-    /* Elimina los márgenes que el navegador trae por defecto por las dudas */
+    /* Tipografía por defecto para los textos comunes (párrafos, enlaces, etc.) */
+    font-family: Arial, sans-serif;
+    /* Eliminamos márgenes por defecto del navegador */
     margin: 0;
     padding: 0;
 }
 
-/* Estilos para la caja que envuelve todo el contenido (definida con la clase .contenedor) */
+/* Estilos para el contenedor que centra el contenido en la pantalla */
 .contenedor {
-    /* Define el ancho máximo que puede tener la página en pantallas grandes */
-    max-width: 700px;
-    /* Centra la caja horizontalmente en la pantalla */
-    margin: 40px auto;
-    /* Añade espacio acolchonado por dentro de la caja para que el texto no toque los bordes */
+    /* Reducimos el ancho máximo de la caja contenedora para acortar el largo de línea de los párrafos */
+    max-width: 600px;
+    /* Centra la caja horizontalmente en la pantalla y le da margen arriba y abajo */
+    margin: 50px auto;
+    /* Espacio interno acolchonado para que el texto no toque los bordes */
     padding: 20px;
-    /* Le da un color de fondo blanco a la tarjeta del contenido */
-    background-color: #ffffff;
-    /* Añade esquinas suavemente redondeadas */
-    border-radius: 8px;
-    /* Aplica una sombra muy sutil alrededor para darle un efecto visual de profundidad */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Estilos específicos para el título principal (h1) */
+/* Estilos para el título principal (h1) */
 h1 {
-    /* Aumenta el tamaño de la letra */
-    font-size: 2.5rem;
-    /* Pone el color del título en negro profundo para que destaque */
+    /* Aplicamos la tipografía Merriweather traída de Google Fonts (y serif como alternativa) */
+    font-family: 'Merriweather', Georgia, serif;
+    /* Color negro destacado */
     color: #111111;
-    /* Reduce el espacio que queda debajo del título */
-    margin-bottom: 30px;
-    /* Añade una línea decorativa fina debajo del título principal */
-    border-bottom: 2px solid #eaeaea;
-    /* Espacio entre el texto del título y su línea inferior */
-    padding-bottom: 10px;
+    /* Tamaño de letra grande y ordenado */
+    font-size: 2.4rem;
+    /* Espacio debajo del título */
+    margin-bottom: 25px;
 }
 
-/* Estilos para los títulos de sección (h2) */
+/* Estilos para los subtítulos (h2) */
 h2 {
-    /* Define un tamaño intermedio para los subtítulos */
-    font-size: 1.6rem;
-    /* Color gris oscuro con personalidad */
+    /* Aplicamos la tipografía Roboto traída de Google Fonts */
+    font-family: 'Roboto', sans-serif;
+    /* Especificamos el peso "Regular" (400) para que no se vea excesivamente negrita */
+    font-weight: 400;
+    /* Color gris azulado para darle un toque de diseño */
     color: #2c3e50;
-    /* Margen superior para separarlo del bloque anterior */
-    margin-top: 30px;
-    /* Margen inferior para que no quede pegado al párrafo que le sigue */
-    margin-bottom: 15px;
+    /* Tamaño del subtítulo */
+    font-size: 1.5rem;
+    /* Margen arriba para separarlo de los bloques anteriores */
+    margin-top: 35px;
+    /* Margen abajo mínimo para que quede cerca de su párrafo correspondiente */
+    margin-bottom: 10px;
 }
 
 /* Estilos para los párrafos de texto (p) */
 p {
-    /* Tamaño de letra estándar y legible para lectura fluida */
+    /* Aumentamos el espaciado entre líneas (interlineado) para mejorar la lectura */
+    line-height: 1.7;
+    /* Aumentamos el margen inferior para darles más espaciado y separación entre sí */
+    margin-bottom: 28px;
+    /* Tamaño de letra cómodo para lectura en pantallas digitales */
     font-size: 1.05rem;
-    /* Margen inferior para separar un párrafo de otro adecuadamente */
-    margin-bottom: 20px;
-    /* Justifica de forma sutil el texto para un orden visual más editorial */
-    text-align: justify;
+    /* Alineación del texto hacia la izquierda (estilo estándar moderno) */
+    text-align: left;
 }
 
 /* Estilos para los enlaces web (etiqueta a) */
 a {
-    /* Color azul para el enlace (estilo clásico de diseño interactivo) */
+    /* Color azul sutil para el enlace */
     color: #0066cc;
-    /* Quita el subrayado automático que tienen los enlaces */
-    text-shadow: none;
+    /* Quitamos el subrayado inicial */
     text-decoration: none;
-    /* Hace que la transición de color al pasar el mouse sea suave */
-    transition: color 0.2s ease;
 }
 
-/* Estilo que se activa cuando el usuario pasa el cursor sobre el enlace */
+/* Estilo cuando pasas el cursor por arriba del enlace */
 a:hover {
-    /* Cambia a un azul más oscuro al pasar el mouse */
-    color: #004499;
-    /* Agrega el subrayado solo cuando el cursor está encima, como pista visual */
+    /* Se subraya para dar la pista visual de que es cliqueable */
     text-decoration: underline;
 }
