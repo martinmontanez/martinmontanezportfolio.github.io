@@ -1,0 +1,85 @@
+/* Estilos generales para todo el cuerpo de la página */
+body {
+    /* Define una tipografía limpia y moderna (sin serifas) */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    /* Aplica un color de fondo gris casi blanco, muy suave a la vista */
+    background-color: #f8f9fa;
+    /* Define el color del texto general en un gris oscuro, más suave que el negro puro */
+    color: #333333;
+    /* Controla el espacio entre líneas para que el texto sea cómodo de leer */
+    line-height: 1.6;
+    /* Elimina los márgenes que el navegador trae por defecto por las dudas */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para la caja que envuelve todo el contenido (definida con la clase .contenedor) */
+.contenedor {
+    /* Define el ancho máximo que puede tener la página en pantallas grandes */
+    max-width: 700px;
+    /* Centra la caja horizontalmente en la pantalla */
+    margin: 40px auto;
+    /* Añade espacio acolchonado por dentro de la caja para que el texto no toque los bordes */
+    padding: 20px;
+    /* Le da un color de fondo blanco a la tarjeta del contenido */
+    background-color: #ffffff;
+    /* Añade esquinas suavemente redondeadas */
+    border-radius: 8px;
+    /* Aplica una sombra muy sutil alrededor para darle un efecto visual de profundidad */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilos específicos para el título principal (h1) */
+h1 {
+    /* Aumenta el tamaño de la letra */
+    font-size: 2.5rem;
+    /* Pone el color del título en negro profundo para que destaque */
+    color: #111111;
+    /* Reduce el espacio que queda debajo del título */
+    margin-bottom: 30px;
+    /* Añade una línea decorativa fina debajo del título principal */
+    border-bottom: 2px solid #eaeaea;
+    /* Espacio entre el texto del título y su línea inferior */
+    padding-bottom: 10px;
+}
+
+/* Estilos para los títulos de sección (h2) */
+h2 {
+    /* Define un tamaño intermedio para los subtítulos */
+    font-size: 1.6rem;
+    /* Color gris oscuro con personalidad */
+    color: #2c3e50;
+    /* Margen superior para separarlo del bloque anterior */
+    margin-top: 30px;
+    /* Margen inferior para que no quede pegado al párrafo que le sigue */
+    margin-bottom: 15px;
+}
+
+/* Estilos para los párrafos de texto (p) */
+p {
+    /* Tamaño de letra estándar y legible para lectura fluida */
+    font-size: 1.05rem;
+    /* Margen inferior para separar un párrafo de otro adecuadamente */
+    margin-bottom: 20px;
+    /* Justifica de forma sutil el texto para un orden visual más editorial */
+    text-align: justify;
+}
+
+/* Estilos para los enlaces web (etiqueta a) */
+a {
+    /* Color azul para el enlace (estilo clásico de diseño interactivo) */
+    color: #0066cc;
+    /* Quita el subrayado automático que tienen los enlaces */
+    text-shadow: none;
+    text-decoration: none;
+    /* Hace que la transición de color al pasar el mouse sea suave */
+    transition: color 0.2s ease;
+}
+
+/* Estilo que se activa cuando el usuario pasa el cursor sobre el enlace */
+a:hover {
+    /* Cambia a un azul más oscuro al pasar el mouse */
+    color: #004499;
+    /* Agrega el subrayado solo cuando el cursor está encima, como pista visual */
+    text-decoration: underline;
+}
